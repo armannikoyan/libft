@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anikoyan <anikoyan@student.42yerevan.am>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/01 23:48:12 by anikoyan          #+#    #+#             */
-/*   Updated: 2024/04/09 19:06:58 by anikoyan         ###   ########.fr       */
+/*   Created: 2024/03/28 04:28:05 by anikoyan          #+#    #+#             */
+/*   Updated: 2024/04/09 18:47:50 by anikoyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int	ft_putstr(char *str)
 {
-	while (*s)
-	{
-		if (*s == (unsigned char)c)
-			return ((char *)s);
-		s++;
-	}
-	if (*s == (unsigned char)c)
-		return ((char *)s);
-	return (NULL);
+	int	len;
+
+	len = (int)ft_strlen(str);
+	if (write(1, str, len) == -1)
+		return (-1);
+	return (len);
 }

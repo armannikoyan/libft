@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anikoyan <anikoyan@student.42yerevan.am>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/01 23:48:12 by anikoyan          #+#    #+#             */
-/*   Updated: 2024/04/09 19:06:58 by anikoyan         ###   ########.fr       */
+/*   Created: 2024/03/06 23:16:46 by anikoyan          #+#    #+#             */
+/*   Updated: 2024/04/09 18:46:57 by anikoyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	ft_strrev(char *str)
 {
-	while (*s)
+	char	tmp;
+	int		len;
+	int		i;
+
+	if (!str)
+		return ;
+	len = ft_strlen(str);
+	i = 0;
+	while (i < len / 2)
 	{
-		if (*s == (unsigned char)c)
-			return ((char *)s);
-		s++;
+		tmp = str[i];
+		str[i] = str[len - i - 1];
+		str[len - i - 1] = tmp;
+		i++;
 	}
-	if (*s == (unsigned char)c)
-		return ((char *)s);
-	return (NULL);
 }

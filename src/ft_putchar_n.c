@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_n.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anikoyan <anikoyan@student.42yerevan.am>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/01 23:48:12 by anikoyan          #+#    #+#             */
-/*   Updated: 2024/04/09 19:06:58 by anikoyan         ###   ########.fr       */
+/*   Created: 2024/03/28 04:31:41 by anikoyan          #+#    #+#             */
+/*   Updated: 2024/04/09 18:47:32 by anikoyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int	ft_putchar_n(char c, int *count)
 {
-	while (*s)
-	{
-		if (*s == (unsigned char)c)
-			return ((char *)s);
-		s++;
-	}
-	if (*s == (unsigned char)c)
-		return ((char *)s);
-	return (NULL);
+	char	*str;
+	int		i;
+
+	str = (char *)malloc(sizeof(char) * (*count + 1));
+	if (!str)
+		return (-1);
+	i = 0;
+	while (i < *count)
+		str[i++] = c;
+	str[i] = '\0';
+	if (write(1, str, *count) == -1)
+		*count = -1;
+	free(str);
+	return (*count);
 }
