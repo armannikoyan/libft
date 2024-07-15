@@ -6,7 +6,7 @@
 /*   By: anikoyan <anikoyan@student.42yerevan.am>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 23:53:04 by anikoyan          #+#    #+#             */
-/*   Updated: 2024/05/10 16:45:59 by anikoyan         ###   ########.fr       */
+/*   Updated: 2024/07/15 10:28:32 by anikoyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,7 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
+int		ft_isspace(char c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_strcmp(char *s1, char *s2);
