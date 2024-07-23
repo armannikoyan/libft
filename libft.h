@@ -6,7 +6,7 @@
 /*   By: anikoyan <anikoyan@student.42yerevan.am>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 23:53:04 by anikoyan          #+#    #+#             */
-/*   Updated: 2024/07/22 10:48:10 by anikoyan         ###   ########.fr       */
+/*   Updated: 2024/07/23 13:25:46 by anikoyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,8 @@ int		ft_print_unsigned(unsigned int u_nbr, t_flags *flags);
 int		ft_print_int(int nbr, t_flags *flags);
 int		ft_print_hex(unsigned int u_nbr, t_flags *flags);
 int		ft_print_pointer(size_t u_nbr, t_flags *flags);
+
+double	ft_atof(const char *str);
 
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
