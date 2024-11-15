@@ -6,7 +6,7 @@
 #    By: anikoyan <anikoyan@student.42yerevan.am>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/01 23:53:16 by anikoyan          #+#    #+#              #
-#    Updated: 2024/07/23 13:26:06 by anikoyan         ###   ########.fr        #
+#    Updated: 2024/11/15 14:56:44 by anikoyan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ SRCS = $(addprefix $(SRC_DIR)/, \
        ft_putnbr_fd.c ft_strrev.c ft_putchar.c \
        ft_putchar_n.c ft_putstr.c ft_uitoa.c \
        ft_uitoa_base.c ft_printf.c ft_strcmp.c \
-       ft_isspace.c ft_atof.c\
+       ft_isspace.c ft_atof.c ft_free_2d_array.c \
        $(addprefix utils/, \
        $(addprefix printf/, \
        ft_print_char.c ft_print_string.c ft_print_unsigned.c \
