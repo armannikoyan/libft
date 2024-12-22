@@ -6,13 +6,13 @@
 /*   By: anikoyan <anikoyan@student.42yerevan.am>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 16:44:56 by anikoyan          #+#    #+#             */
-/*   Updated: 2024/05/10 16:45:28 by anikoyan         ###   ########.fr       */
+/*   Updated: 2024/12/17 11:45:48 by anikoyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int	ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
 	int	i;
 
