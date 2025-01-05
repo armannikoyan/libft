@@ -29,6 +29,7 @@ SRCS = $(addprefix $(SRC_DIR)/, \
        ft_putchar_n.c ft_putstr.c ft_uitoa.c \
        ft_uitoa_base.c ft_printf.c ft_strcmp.c \
        ft_isspace.c ft_atof.c ft_free_2d_array.c \
+       ft_strcpy.c ft_strcat.c \
        $(addprefix utils/, \
        $(addprefix printf/, \
        ft_print_char.c ft_print_string.c ft_print_unsigned.c \
