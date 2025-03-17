@@ -6,7 +6,7 @@
 /*   By: anikoyan <anikoyan@student.42yerevan.am>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 23:53:04 by anikoyan          #+#    #+#             */
-/*   Updated: 2025/03/17 17:30:19 by anikoyan         ###   ########.fr       */
+/*   Updated: 2025/03/17 17:37:45 by anikoyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,8 @@ char	*ft_process_flags(char *number, int *padding_width, int *result,
 			t_flags *flags);
 
 char	**ft_split(char const *s, char c);
+
+bool	ft_isprime(int number);
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
