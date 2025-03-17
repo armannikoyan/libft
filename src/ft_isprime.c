@@ -6,7 +6,7 @@
 /*   By: anikoyan <anikoyan@student.42yerevan.am>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 17:32:33 by anikoyan          #+#    #+#             */
-/*   Updated: 2025/03/17 17:37:30 by anikoyan         ###   ########.fr       */
+/*   Updated: 2025/03/17 20:41:42 by anikoyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ bool	ft_isprime(int number)
 		return (false);
 	else if (number <= 3)
 		return (true);
+	i = 0;
 	while ((float)i < ft_sqrt(number))
 	{
 		if (number % i == 0 && number % (number + 2) == 0)
