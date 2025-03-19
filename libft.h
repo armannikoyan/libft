@@ -6,7 +6,7 @@
 /*   By: anikoyan <anikoyan@student.42yerevan.am>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 23:53:04 by anikoyan          #+#    #+#             */
-/*   Updated: 2025/03/17 17:37:45 by anikoyan         ###   ########.fr       */
+/*   Updated: 2025/03/19 20:07:34 by anikoyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_atoi(const char *str);
 int		ft_lstsize(t_list *lst);
-int		ft_putchar(char c);
+int		ft_putchar(int c);
 int		ft_putstr(char *str);
 int		ft_putchar_n(char c, int *count);
 int		ft_padding_width(char *number, t_flags *flags);
