@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include <stdlib.h>
+#include <unistd.h>
 
 int	ft_putchar_n(char c, int *count)
 {

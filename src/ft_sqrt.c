@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
-
 static float	ft_fraction(int number, float root)
 {
 	int		i;
